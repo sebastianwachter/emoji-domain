@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Streamster';
+  src: url('assets/hinted-Streamster.eot');
+  src: local('Streamster'),
+      url('assets/hinted-Streamster.eot?#iefix') format('embedded-opentype'),
+      url('assets/hinted-Streamster.woff2') format('woff2'),
+      url('assets/hinted-Streamster.woff') format('woff'),
+      url('assets/hinted-Streamster.ttf') format('truetype'),
+      url('assets/hinted-Streamster.svg#Streamster') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Colors
+pink: #ff71ce
+purple: #b967ff
+blue: #01cdfe
+green: #05ffa1
+yellow: #fffb96
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Streamster', fantasy, sans-serif;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 8vh;
+  color: #b967ff;
+  text-shadow: 0.1vw 0.4vw rgba(255, 251, 150, 0.9), -1.5vw 0.1vw 0 rgba(1, 203, 254, 0.5);
+  margin-bottom: 25vh;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to top, #ff71ce 0%,#f3b9df 100%);
+}
