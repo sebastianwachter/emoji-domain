@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "parcel ./src/index.html/",
     "build": "parcel build ./src/index.html/ --public-url ./",
-    "lint": "eslint --ext .js,.jsx .",
-    "lint-fix": "eslint --fix --ext .js,.jsx ."
+    "lint": "eslint --ext .js ./src",
+    "lint-fix": "eslint --fix --ext .js ./src"
   },
   "author": "SUBHUMAN <sebi.wachter@onlin.de>",
   "license": "MIT",
@@ -18,7 +18,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "airbnb"
+      "airbnb/base"
     ],
     "env": {
       "browser": true
@@ -47,20 +47,18 @@
     "*.js": "eslint"
   },
   "dependencies": {
-    "three": "^0.106.2"
+    "three": "^0.108.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "babel-eslint": "^10.0.2",
-    "eslint": "^6.0.1",
-    "eslint-config-airbnb": "^17.1.1",
-    "eslint-import-resolver-parcel": "^1.9.0",
-    "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.2",
-    "husky": "^3.0.0",
-    "lint-staged": "^9.0.0",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-import-resolver-parcel": "^1.10.0",
+    "eslint-plugin-import": "^2.18.2",
+    "husky": "^3.0.5",
+    "lint-staged": "^9.2.5",
     "parcel-bundler": "^1.12.3"
   }
 }
