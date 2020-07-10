@@ -5,6 +5,7 @@
   "main": "./src/index.html",
   "scripts": {
     "dev": "parcel ./src/index.html/",
+    "prebuild": "rimraf dist",
     "build": "parcel build ./src/index.html/ --public-url ./",
     "lint": "eslint --ext .js ./src",
     "lint-fix": "eslint --fix --ext .js ./src"
@@ -46,6 +47,7 @@
     "eslint-plugin-import": "^2.22.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
-    "parcel": "^1.12.4"
+    "parcel": "^1.12.4",
+    "rimraf": "^3.0.2"
   }
 }

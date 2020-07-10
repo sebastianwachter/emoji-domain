@@ -1,0 +1,20 @@
+version: '3'
+services:
+  emoji:
+    build: .
+    restart: unless-stopped
+    container_name: emoji
+    networks:
+      - proxy
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.emoji.rule=Host(`emoji.subhuman.services`) || Host(`👌🏻😂💯🔥.ws`)"
+      - "traefik.http.routers.emoji.tls.certresolver=leresolver"
+      - "traefik.http.routers.emoji.entrypoints=websecure"
+      - "traefik.http.routers.emoji.middlewares=secure-compress@file"
+      - "traefik.http.services.emoji.loadbalancer.server.port=80"
+      - "traefik.docker.network=proxy"
+
+networks:
+  proxy:
+    external: true
