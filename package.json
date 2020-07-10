@@ -23,19 +23,8 @@
     "env": {
       "browser": true
     },
-    "parser": "babel-eslint",
-    "parserOptions": {
-      "sourceType": "module"
-    },
     "rules": {
       "no-unused-vars": "off"
-    },
-    "settings": {
-      "import/resolver": {
-        "parcel": {
-          "rootDir": "./src"
-        }
-      }
     }
   },
   "husky": {
@@ -47,18 +36,16 @@
     "*.js": "eslint"
   },
   "dependencies": {
-    "three": "^0.108.0"
+    "three": "^0.118.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.3.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-import-resolver-parcel": "^1.10.0",
-    "eslint-plugin-import": "^2.18.2",
-    "husky": "^3.0.5",
-    "lint-staged": "^9.2.5",
-    "parcel-bundler": "^1.12.3"
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "parcel": "^1.12.4"
   }
 }

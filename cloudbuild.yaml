@@ -1,9 +1,0 @@
-steps:
-- name: 'gcr.io/cloud-builders/npm'
-  args: ['ci']
-- name: 'gcr.io/cloud-builders/npm'
-  args: ['run', 'lint']
-- name: 'gcr.io/cloud-builders/npm'
-  args: ['run', 'build']
-- name: 'gcr.io/cloud-builders/gsutil'
-  args: ['-m', 'rsync', '-d', '-r', 'dist', 'gs://emoji-domain/']
