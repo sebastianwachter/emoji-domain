@@ -8,7 +8,7 @@ services:
       - proxy
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.emoji.rule=Host(`emoji.subhuman.services`) || Host(`👌🏻😂💯🔥.ws`)"
+      - "traefik.http.routers.emoji.rule=Host(`emoji.subhuman.services`) || Host(`xn--mn8h7e2kwps9a.ws`)"
       - "traefik.http.routers.emoji.tls.certresolver=leresolver"
       - "traefik.http.routers.emoji.entrypoints=websecure"
       - "traefik.http.routers.emoji.middlewares=secure-compress@file"
