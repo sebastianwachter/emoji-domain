@@ -37,7 +37,7 @@
     "*.js": "eslint"
   },
   "dependencies": {
-    "three": "^0.118.3"
+    "three": "^0.125.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",
